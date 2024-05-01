@@ -136,7 +136,11 @@ class SpaceJam(ShowBase):
 
         self.tex = self.loader.loadTexture("./Assets/Universe/starfield-in-blue.jpg")
         self.Universe.setTexture(self.tex, 1)
+
         
+        self.sentinal1 = spaceJamClass.Orbiter(self.loader, self.taskMgr, "./Assets/Drones/DroneDefender.obj", self.render, "Drone", 6.2, "./Assets/Drones/octotoad1_auv.png", self.Planet3, 800, "MLB", self.Ship1)
+        self.sentinal2 = spaceJamClass.Orbiter(self.loader, self.taskMgr, "./Assets/Drones/DroneDefender.obj", self.render, "Drone", 6.2, "./Assets/Drones/octotoad1_auv.png", self.Planet6, 300, "MLB", self.Ship1)
+       
         fullCycle = 60
         self.setCamera()
 
